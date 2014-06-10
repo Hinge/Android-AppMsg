@@ -2,9 +2,12 @@ apply plugin: 'android-library'
 
 android {
     compileSdkVersion 19
-    buildToolsVersion "19.0.3"
+    buildToolsVersion "19.1.0"
 
     defaultConfig {
+        applicationId 'com.devspark.appmsg'
+        versionCode 1
+        versionName "1.0.1"
         minSdkVersion 4
         targetSdkVersion 19
     }
@@ -15,9 +18,4 @@ android {
             res.srcDirs = ['res']
         }
     }
-}
-
-if (project.hasProperty('nexusUsername')) {
-    // Used to push in maven
-    apply from: '../maven_push.gradle'
 }
