@@ -356,7 +356,7 @@ public class AppMsg {
      * @param clickListener Clicklistener
      */
     private static AppMsg makeText(Activity context, CharSequence text, Style style, View view, boolean floating, 
-    		float textSize, OnClickListener clickListener) {
+            float textSize, OnClickListener clickListener) {
         AppMsg result = new AppMsg(context);
 
         view.setBackgroundResource(style.background);
